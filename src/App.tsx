@@ -43,6 +43,7 @@ const App: React.FC = () => {
           temp={weather.temp}
           description={weather.description}
           icon={weather.icon}
+          city={city}
         />
       )}
     </div>

@@ -2,11 +2,13 @@ interface WeatherProps {
   temp: number;
   description: string;
   icon: string;
+  city: string;
 }
 
-export default function WeatherCard({ temp, description, icon }: WeatherProps) {
+export default function WeatherCard({ temp, description, icon, city }: WeatherProps) {
   return (
     <div className="h-full w-full bg-slate-800 p-6 rounded shadow text-center text-white">
+      <h1 className="text-3xl font-bold mb-2">{city}</h1>
       <img
         src={`https://openweathermap.org/img/wn/${icon}@2x.png`}
         alt="weather icon"
